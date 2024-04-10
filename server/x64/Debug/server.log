@@ -1,0 +1,9 @@
+﻿  server.cpp
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(109,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(150,27): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(205,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(269,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(347,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(424,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(435): warning C4715: 'ThreadFunc': not all control paths return a value
+  server.vcxproj -> D:\univer\KS\LR-3-KS-C++\x64\Debug\server.exe
