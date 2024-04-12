@@ -1,11 +1,11 @@
 ﻿  client.cpp
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(111,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(115,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(119,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(148,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(153,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(157,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(161,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(193,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\univer\KS\LR-3-KS-C++\Client\client.cpp(217,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(106,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(110,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(114,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(143,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(148,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(152,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(156,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(188,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\univer\KS\LR-3-KS-C++\Client\client.cpp(212,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Client.vcxproj -> D:\univer\KS\LR-3-KS-C++\x64\Debug\Client.exe

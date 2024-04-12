@@ -140,41 +140,12 @@ void writeFile(vector<Detail> vec_of_details)
 	fout.close();
 }
 
-void readFile(vector<Detail>& vec_of_details)
-{
-	ifstream fin(FILE_OF_DETAILS, ios::in);
-
-	if (!fin.is_open())
-		return;
-
-	if (fin.peek() == fin.eof())
-		return;
-
-	string factory;
-	float price;
-	int day, month, year;
-	while (!fin.eof())
-	{
-		getline(fin, factory);
-		fin >> price;
-		fin >> day;
-		fin >> month;
-		fin >> year;
-
-		Detail detail(factory, price, day, month, year);
-		vec_of_details.push_back(detail);
-		fin.ignore(10, '\n');
-	}
-
-	fin.close();
-}
 
 DWORD WINAPI ThreadFunc(LPVOID client_socket)
 {
 	SOCKET s2 = ((SOCKET*)client_socket)[0];
 	char buf[255];
 	vector<Detail> vec_of_details;
-	readFile(vec_of_details);
 
 	while (recv(s2, buf, sizeof(buf), NULL))
 	{
@@ -190,19 +161,22 @@ DWORD WINAPI ThreadFunc(LPVOID client_socket)
 		case '1': {
 			cout << "Выбран просмотр данных." << endl;
 
-			stringstream ss; //переделать отправку не через поток(?)
-			int i = 0;
-			for (auto it : vec_of_details)
-			{
-				i++;
-				ss << i << ". Завод-поставщик: " << it.getFactory()
-					<< "\t\t\tЦена: " << it.getPrice()
-					<< "\t\t\tДата поставки: " << it.getDay() << " " << it.getMonth() << " " << it.getYear() << endl;
+			if (vec_of_details.empty()) {
+				send(s2, "NoData", 7, NULL);
 			}
+			else {
+				stringstream ss;
+				int i = 0;
+				for (auto it : vec_of_details) {
+					i++;
+					ss << i << ". Завод-поставщик: " << it.getFactory()
+						<< "\t\t\tЦена: " << it.getPrice()
+						<< "\t\t\tДата поставки: " << it.getDay() << " " << it.getMonth() << " " << it.getYear() << endl;
+				}
 
-			string data = ss.str();
-
-			send(s2, data.c_str(), data.length(), NULL);
+				string data = ss.str();
+				send(s2, data.c_str(), data.length(), NULL);
+			}
 			break;
 		}
 		case '2': {

@@ -84,7 +84,12 @@ int main() {
 				int bytesReceived = recv(s, buf, sizeof(buf), NULL);
 				if (bytesReceived != -1) {
 					buf[bytesReceived] = '\0';
-					cout << buf << endl;
+					if (strcmp(buf, "NoData") == 0) {
+						cout << "Нет данных для отображения." << endl;
+					}
+					else {
+						cout << buf << endl;
+					}
 				}
 				else {
 					cerr << "Ошибка!" << endl;

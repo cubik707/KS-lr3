@@ -1,0 +1,7 @@
+﻿  Generating code
+D:\univer\KS\LR-3-KS-C++\server\server.cpp(409): warning C4715: 'ThreadFunc': not all control paths return a value
+  5 of 296 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    50 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  server.vcxproj -> D:\univer\KS\LR-3-KS-C++\x64\Release\server.exe
